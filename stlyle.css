@@ -1,0 +1,155 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
+
+
+body{
+    font-family: 'Carter One', cursive;
+    background:#D5CEA3
+}
+
+header{
+    margin: 60px;
+
+
+}
+.menu{
+    list-style: none;
+    padding: 0;
+    background: #3C2A21;
+    width: 200%;
+    max-width: 1270px;
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: 5px 8px 12px black;
+}
+.menu li a{
+    text-decoration: none;
+    color:white;
+   padding:20px;
+    display: block;
+}
+.menu li{
+    display: inline-block;
+    text-align: center;
+}
+
+.menu li a:hover{
+    background:#E5E5CB;
+}
+
+video{
+    width: 1255px;
+    height: 600px;
+    display: block;
+    margin: auto;
+    
+}
+
+.container{
+
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    margin-top: 100px;
+    
+}
+
+.imagen1{
+    width: 250px; 
+    height: 350px;
+    margin-right: 20px;
+    border-radius: 20px;
+    box-shadow: 5px 8px 12px black;
+    
+}
+
+.Donato {
+    margin-bottom: auto;
+    
+}
+
+.Betular{
+margin: auto;
+
+}
+
+.Damian{
+    margin: auto;
+
+
+}
+
+.imagen2{
+    width: 250px;
+    height: 350px;
+    margin-right: 20px;
+    border-radius: 20px;
+    box-shadow: 5px 8px 12px black;
+}
+
+.imagen3{
+    width: 250px;
+    height: 350px;
+    margin-right: 20px;
+    border-radius: 20px;
+    box-shadow: 5px 8px 12px black;
+}
+
+.footer{
+    background-color: #3C2A21;
+    padding: 70px;
+    margin-top: 100px;
+    border-radius: 20px;
+    box-shadow: 5px 8px 12px black;
+}
+
+.footer-row{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.footer-links{
+    width: 25%;
+    padding:0 15px
+}
+
+.footer-links h2{
+    font-size: 18px;
+    color: #E5E5CB;
+    margin-bottom: 25px;
+    font-weight: 500;
+    border-bottom: 2px solid #E5E5CB;
+    padding-bottom: 10px;
+    display: inline-block;
+
+}
+
+.footer-links ul li a {
+    font-size: 13px;
+    text-decoration: none;
+    color: #D5CEA3;
+    display: block;
+    margin-bottom: 15px;
+    transition: all .3s ease;
+}
+
+.footer-links ul li a:hover{
+    color: black;
+    padding-left: 6px;
+
+}
+
+.social-links a {
+    display: inline-block;
+    min-height: 40px;
+    width: 40px;
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: aqua;
+    transition: all .5s ease;
+
+}
