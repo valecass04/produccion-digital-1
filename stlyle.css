@@ -25,6 +25,7 @@ header{
     margin: auto;
     border-radius: 20px;
     box-shadow: 5px 8px 12px black;
+    position: fixed;
 }
 .menu li a{
     text-decoration: none;
@@ -111,10 +112,6 @@ p{
 }
 
 
-.contacto{
-
-
-}
 .footer-row{
     display: flex;
     flex-wrap: wrap;
