@@ -16,22 +16,55 @@
                 <li><a href="Ubicación.html">Ubicación</a></li>
             </ul>
         </nav>    
-    </head>    
+    </head>  
 
-<body>
-	<div class="container2">
-		<div class="contact-box">
-			<div class="Izquierda"></div>
-			<div class="Derecha">
-				<h2>Contact Us</h2>
-				<input type="texto" class="campo" placeholder="Nombre">
-				<input type="texto" class="campo" placeholder="E-Mail">
-				<input type="texto" class="campo" placeholder="Celular">
-				<textarea placeholder="Mensaje" class="campo"></textarea>
-				<button class="btn">Enviar</button>
-			</div>
-		</div>
-	</div>
+    <section class = "banner">
+        <h2>Reservas online</h2>
+        <div class = "card-container">
+            <div class = "card-img">
+                
+            </div>
+
+            <div class = "card-content">
+                <h3>Reservas Online</h3>
+                <form>
+                    <div class = "fila-formulario">
+                        <select name = "dias">
+                            <option value = "day-select">Seleccionar Día</option>
+                            <option value = "doimingo">Domingo</option>
+                            <option value = "lunes">Lunes</option>
+                            <option value = "martes">Martes</option>
+                            <option value = "miercoles">Miercoles</option>
+                            <option value = "jueves">Jueves</option>
+                            <option value = "viernes">Viernes</option>
+                            <option value = "sabado">Sábado</option>
+                        </select>
+
+                        <select name = "hours">
+                            <option value = "hour-select">Seleccionar Hora</option>
+                            <option value = "10">10: 00</option>
+                            <option value = "10">12: 00</option>
+                            <option value = "10">14: 00</option>
+                            <option value = "10">16: 00</option>
+                            <option value = "10">18: 00</option>
+                            <option value = "10">20: 00</option>
+                            <option value = "10">22: 00</option>
+                        </select>
+                    </div>
+
+                    <div class = "fila-formulario">
+                        <input type = "text" placeholder="Nombre Completo">
+                        <input type = "text" placeholder="Celular">
+                    </div>
+                    <div class = "fila-formulario">
+                        <input type = "number" placeholder="Cantidad de personas" min = "1">
+                        <input type = "submit" value = "BOOK TABLE">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    
 </body>
 </html>
 
