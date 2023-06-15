@@ -1,30 +1,58 @@
 <!DOCTYPE html> 
 
-<html>
-    <head>
-        <title>
-            Osten 
-        </title>
-        <link rel="stylesheet" href="stlyle.css">
-    
-        <nav>
-            <ul class="menu">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="menu.html">Menu</a></li>
-                <li><a href="Reservas.html">Reservas</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-                <li><a href="Ubicación.html">Ubicación</a></li>
-            </ul>
-        </nav>    
-    </head>     
+<!DOCTYPE html>
 
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Osten</title>
+    <link rel="stylesheet" href="stlyle.css" />
+  </head>
+  <body>
     <div>
-        <div class="mapa">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.
+      <nav>
+        <div class="hamburger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+        <ul class="menu">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="Reservas.html">Reservas</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="Ubicación.html">Ubicación</a></li>
+        </ul>
+      </nav>
+      <div class="mapa">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.
             3454619922277!2d-58.363816324770546!3d-34.62070925839488!2m3!1f0!2f0!3f0
             !3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a3352b457877fd%3A0x862d55f863c6e15
-            e!2sOSTEN%20restaurante%20%26%20bar!5e0!3m2!1ses!2sar!4v1686540439986!5m2!1ses!2sar" 
-            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
+            e!2sOSTEN%20restaurante%20%26%20bar!5e0!3m2!1ses!2sar!4v1686540439986!5m2!1ses!2sar"
+          width="100%"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
     </div>
-</html>
+    <script>
+      const hamburger = document.querySelector('.hamburger');
+      const menu = document.querySelector('.menu');
+
+      hamburger.addEventListener('click', () => {
+        menu.classList.toggle('show');
+      });
+
+      document.addEventListener('click', (event) => {
+        const target = event.target;
+        if (!menu.contains(target) && !hamburger.contains(target)) {
+          menu.classList.remove('show');
+        }
+      });
+    </script>
+  </body>
+</html

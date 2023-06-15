@@ -1,116 +1,124 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 
 <html>
-    <head>
-        <title>
-            Osten 
-        </title>
-        <link rel="stylesheet" href="stlyle.css">
-    </head>
-    <body>
-        <nav>
-            <ul class="menu">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="menu.html">Menu</a></li>
-                <li><a href="Reservas.html">Reservas</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-                <li><a href="Ubicación.html">Ubicación</a></li>
-            </ul>
-
+  <head>
+    <meta charset="UTF-8" />
+    <title>Osten</title>
+    <link rel="stylesheet" href="stlyle.css" />
+  </head>
+  <body>
+    <div>
+      <nav>
+        <div class="hamburger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+        <ul class="menu">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="Reservas.html">Reservas</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="Ubicación.html">Ubicación</a></li>
+        </ul>
+      </nav>
+      <div class="video-container">
         <video src="video osten 2.mp4" autoplay controls>
-            <source src="video osten 2.mp4" type="video/mp4">
-           
+          <source src="video osten 2.mp4" type="video/mp4" />
         </video>
-        </nav>
-        <header>
-           <u><h3>NUESTRO EQUIPO</h3></u>
-        </header>
+      </div>
+      <header>
+        <u><h3>NUESTRO EQUIPO</h3></u>
+      </header>
 
-        <div class="container">
-
-            <div class="Damian">
-                <img class="imagen1"src="1682553312317.587.JPG"alt="">
-            <p>Damián Betular es un pastelero y
-                cocinero argentino. Fue el chef
-                principal del hotel Palacio Duhau
-                Park Hyatt Buenos Aires y el chef
-                de pastelería ejecutivo de Duhau Pâtisserie</p>
-            </div>  
-        
-
-            <div class="Donato">
-            <img class="imagen2" src="1682553323752.007.JPG"alt="">
-            <P>Donato De Santis es un cocinero
-                italiano especializado en la cocina 
-                de ese país.
-                Desde 2000 reside en Buenos Aires,
-                donde fundó su propio restaurante,
-             Osten</P>
-            </div>
-
-            <div class="German">
-            <img class="imagen3" src="1682553511624.174.JPG"alt="">
-            <P> German Martitegui es un cocinero argentino. Es dueño 
-                del prestigioso restaurante Osten. 
-                Integró, junto con Christophe 
-                Krywonis y Donato de Santis, el
-                jurado de MasterChef y MasterChef
-                Junior en Argentina</P>
-            </div>    
-
-
+      <div class="container">
+        <div class="chef-cards">
+          <img class="imagen1" src="1682553312317.587.JPG" alt="" />
+          <p>
+            Damián Betular es un pastelero y cocinero argentino. Fue el chef
+            principal del hotel Palacio Duhau Park Hyatt Buenos Aires y el chef
+            de pastelería ejecutivo de Duhau Pâtisserie
+          </p>
         </div>
 
+        <div class="chef-cards">
+          <img class="imagen2" src="1682553323752.007.JPG" alt="" />
+          <p>
+            Donato De Santis es un cocinero italiano especializado en la cocina
+            de ese país. Desde 2000 reside en Buenos Aires, donde fundó su
+            propio restaurante, Osten
+          </p>
+        </div>
 
-    </body>
+        <div class="chef-cards">
+          <img class="imagen3" src="1682553511624.174.JPG" alt="" />
+          <p>
+            German Martitegui es un cocinero argentino. Es dueño del prestigioso
+            restaurante Osten. Integró, junto con Christophe Krywonis y Donato
+            de Santis, el jurado de MasterChef y MasterChef Junior en Argentina
+          </p>
+        </div>
+      </div>
+    </div>
+    <script>
+      const hamburger = document.querySelector('.hamburger');
+      const menu = document.querySelector('.menu');
 
+      hamburger.addEventListener('click', () => {
+        menu.classList.toggle('show');
+      });
 
+      document.addEventListener('click', (event) => {
+        const target = event.target;
+        if (!menu.contains(target) && !hamburger.contains(target)) {
+          menu.classList.remove('show');
+        }
+      });
+    </script>
+  </body>
 
-
-
-
-    <footer class="footer">
-        <div class="contenedor">
-                <div class="footer-row">
-                    <div class="footer-links">
-                        <h2>Categorías</h2>
-                        <ul>
-                            <li><a href="#">Inicio</a></li>
-                            <li><a href="#">Menú</a></li>
-                            <li><a href="#">Delivery</a></li>
-                            <li><a href="#">Reservas</a></li>
-                            <li><a href="#">Opiniones</a></li>
-                        </ul>
-                    </div>        
-                    <div class="footer-links">
-                          <h2>Medios De Pago</h2>
-                          <ul>
-                              <li><a href="#">Efectivo</a></li>
-                              <li><a href="#">Débito</a></li>
-                              <li><a href="#">Mercado Pago </a></li>
-                              <li><a href="#">Crédito</a></li>
-                         </ul>
-                    </div>    
-                    <div class="footer-links">
-                          <h2>Contactanos</h2>
-                          <ul>
-                              <li><a href="#">Martes a Jueves de 20 a 2am</a></li>
-                              <li><a href="#">Virnes y Sábados de 20 a 4am</a></li>
-                              <li><a href="#">Juean Manso 1890,Buenos Aires </a></li>
-                         </ul>
-                    </div>    
-                     <div class="footer-links">
-                          <h2>Siguenos</h2>
-                          <div class="social-links">
-                          <ul>
-                             <li><a href="https://www.instagram.com/ostenmadero/?hl=es">Instagram</a></li>
-                             <li><a href="#">Mail</a></li>
-
-                          </ul>  
-                          </div>
-                          
-                     </div>    
-            </div>
-   
-        </footer>
+  <footer class="footer">
+    <div class="footer-contenedor">
+      <div class="footer-links">
+        <h2>Categorías</h2>
+        <ul>
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Menú</a></li>
+          <li><a href="#">Delivery</a></li>
+          <li><a href="#">Reservas</a></li>
+          <li><a href="#">Opiniones</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h2>Medios De Pago</h2>
+        <ul>
+          <li><a href="#">Efectivo</a></li>
+          <li><a href="#">Débito</a></li>
+          <li><a href="#">Mercado Pago </a></li>
+          <li><a href="#">Crédito</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h2>Contactanos</h2>
+        <ul>
+          <li><a href="#">Martes a Jueves de 20 a 2am</a></li>
+          <li><a href="#">Virnes y Sábados de 20 a 4am</a></li>
+          <li><a href="#">Juean Manso 1890,Buenos Aires </a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h2>Siguenos</h2>
+        <div class="social-links">
+          <ul>
+            <li>
+              <a href="https://www.instagram.com/ostenmadero/?hl=es"
+                >Instagram</a
+              >
+            </li>
+            <li><a href="#">Mail</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
 </html>

@@ -1,115 +1,127 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 
 <html>
-    <head>
-        <title>
-            Osten 
-        </title>
-        <link rel="stylesheet" href="stlyle.css">
-    
-        <nav>
-            <ul class="menu">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="menu.html">Menu</a></li>
-                <li><a href="Reservas.html">Reservas</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-                <li><a href="Ubicación.html">Ubicación</a></li>
-            </ul>
-        </nav>    
-    </head>  
+  <head>
+    <meta charset="UTF-8" />
+    <title>Osten</title>
+    <link rel="stylesheet" href="stlyle.css" />
 
-    <section class = "banner">
-        <h2>Reservas online</h2>
-        <div class = "card-container">
-            <div class = "card-img">
-                
+    <nav>
+      <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <ul class="menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="Reservas.html">Reservas</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="Ubicación.html">Ubicación</a></li>
+      </ul>
+    </nav>
+  </head>
+  <body>
+    <section class="banner">
+      <div class="card-container">
+        <div class="card-content">
+          <h3>Reservas Online</h3>
+          <form>
+            <div class="fila-formulario">
+              <select name="dias">
+                <option value="day-select">Seleccionar Día</option>
+                <option value="doimingo">Domingo</option>
+                <option value="lunes">Lunes</option>
+                <option value="martes">Martes</option>
+                <option value="miercoles">Miercoles</option>
+                <option value="jueves">Jueves</option>
+                <option value="viernes">Viernes</option>
+                <option value="sabado">Sábado</option>
+              </select>
+
+              <select name="hours">
+                <option value="hour-select">Seleccionar Hora</option>
+                <option value="10">10: 00</option>
+                <option value="10">12: 00</option>
+                <option value="10">14: 00</option>
+                <option value="10">16: 00</option>
+                <option value="10">18: 00</option>
+                <option value="10">20: 00</option>
+                <option value="10">22: 00</option>
+              </select>
             </div>
 
-            <div class = "card-content">
-                <h3>Reservas Online</h3>
-                <form>
-                    <div class = "fila-formulario">
-                        <select name = "dias">
-                            <option value = "day-select">Seleccionar Día</option>
-                            <option value = "doimingo">Domingo</option>
-                            <option value = "lunes">Lunes</option>
-                            <option value = "martes">Martes</option>
-                            <option value = "miercoles">Miercoles</option>
-                            <option value = "jueves">Jueves</option>
-                            <option value = "viernes">Viernes</option>
-                            <option value = "sabado">Sábado</option>
-                        </select>
-
-                        <select name = "hours">
-                            <option value = "hour-select">Seleccionar Hora</option>
-                            <option value = "10">10: 00</option>
-                            <option value = "10">12: 00</option>
-                            <option value = "10">14: 00</option>
-                            <option value = "10">16: 00</option>
-                            <option value = "10">18: 00</option>
-                            <option value = "10">20: 00</option>
-                            <option value = "10">22: 00</option>
-                        </select>
-                    </div>
-
-                    <div class = "fila-formulario">
-                        <input type = "text" placeholder="Nombre Completo">
-                        <input type = "text" placeholder="Celular">
-                    </div>
-                    <div class = "fila-formulario">
-                        <input type = "number" placeholder="Cantidad de personas" min = "1">
-                        <input type = "submit" value = "BOOK TABLE">
-                    </div>
-                </form>
+            <div class="fila-formulario">
+              <input type="text" placeholder="Nombre Completo" />
+              <input type="text" placeholder="Celular" />
             </div>
+            <div class="fila-formulario">
+              <input type="number" placeholder="Cantidad de personas" min="1" />
+              <input type="submit" value="BOOK TABLE" />
+            </div>
+          </form>
         </div>
+      </div>
     </section>
-    
-</body>
-</html>
+    <script>
+      const hamburger = document.querySelector('.hamburger');
+      const menu = document.querySelector('.menu');
 
-<footer class="footer">
-    <div class="contenedor">
-            <div class="footer-row">
-                <div class="footer-links">
-                    <h2>Categorías</h2>
-                    <ul>
-                        <li><a href="#">Inicio</a></li>
-                        <li><a href="#">Menú</a></li>
-                        <li><a href="#">Delivery</a></li>
-                        <li><a href="#">Reservas</a></li>
-                        <li><a href="#">Opiniones</a></li>
-                    </ul>
-                </div>        
-                <div class="footer-links">
-                      <h2>Medios De Pago</h2>
-                      <ul>
-                          <li><a href="#">Efectivo</a></li>
-                          <li><a href="#">Débito</a></li>
-                          <li><a href="#">Mercado Pago </a></li>
-                          <li><a href="#">Crédito</a></li>
-                     </ul>
-                </div>    
-                <div class="footer-links">
-                      <h2>Contactanos</h2>
-                      <ul>
-                          <li><a href="#">Martes a Jueves de 20 a 2am</a></li>
-                          <li><a href="#">Virnes y Sábados de 20 a 4am</a></li>
-                          <li><a href="#">Juean Manso 1890,Buenos Aires </a></li>
-                     </ul>
-                </div>    
-                 <div class="footer-links">
-                      <h2>Siguenos</h2>
-                      <div class="social-links">
-                      <ul>
-                         <li><a href="https://www.instagram.com/ostenmadero/?hl=es">Instagram</a></li>
-                         <li><a href="#">Mail</a></li>
+      hamburger.addEventListener('click', () => {
+        menu.classList.toggle('show');
+      });
 
-                      </ul>  
-                      </div>
-                      
-                 </div>    
+      document.addEventListener('click', (event) => {
+        const target = event.target;
+        if (!menu.contains(target) && !hamburger.contains(target)) {
+          menu.classList.remove('show');
+        }
+      });
+    </script>
+  </body>
+
+  <footer class="footer">
+    <div class="footer-contenedor">
+      <div class="footer-links">
+        <h2>Categorías</h2>
+        <ul>
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Menú</a></li>
+          <li><a href="#">Delivery</a></li>
+          <li><a href="#">Reservas</a></li>
+          <li><a href="#">Opiniones</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h2>Medios De Pago</h2>
+        <ul>
+          <li><a href="#">Efectivo</a></li>
+          <li><a href="#">Débito</a></li>
+          <li><a href="#">Mercado Pago </a></li>
+          <li><a href="#">Crédito</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h2>Contactanos</h2>
+        <ul>
+          <li><a href="#">Martes a Jueves de 20 a 2am</a></li>
+          <li><a href="#">Virnes y Sábados de 20 a 4am</a></li>
+          <li><a href="#">Juean Manso 1890,Buenos Aires </a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h2>Siguenos</h2>
+        <div class="social-links">
+          <ul>
+            <li>
+              <a href="https://www.instagram.com/ostenmadero/?hl=es"
+                >Instagram</a
+              >
+            </li>
+            <li><a href="#">Mail</a></li>
+          </ul>
         </div>
-
-    </footer>
-</html>
+      </div>
+    </div>
+  </footer>
+</html

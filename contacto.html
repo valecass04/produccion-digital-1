@@ -1,82 +1,100 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 
 <html>
-    <head>
-        <title>
-            Osten 
-        </title>
-        <link rel="stylesheet" href="stlyle.css">
-    
-        <nav>
-            <ul class="menu">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="menu.html">Menu</a></li>
-                <li><a href="Reservas.html">Reservas</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-                <li><a href="Ubicación.html">Ubicación</a></li>
-            </ul>
-        </nav>    
-    </head>    
+  <head>
+    <meta charset="UTF-8" />
+    <title>Osten</title>
+    <link rel="stylesheet" href="stlyle.css" />
 
-<body>
-	<div class="container2">
-		<div class="contact-box">
-			<div class="Izquierda"></div>
-			<div class="Derecha">
-				<h2>Contact Us</h2>
-				<input type="texto" class="campo" placeholder="Nombre">
-				<input type="texto" class="campo" placeholder="E-Mail">
-				<input type="texto" class="campo" placeholder="Celular">
-				<textarea placeholder="Mensaje" class="campo"></textarea>
-				<button class="btn">Enviar</button>
-			</div>
-		</div>
-	</div>
-</body>
-</html>
+    <nav>
+      <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <ul class="menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="Reservas.html">Reservas</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="Ubicación.html">Ubicación</a></li>
+      </ul>
+    </nav>
+  </head>
 
-<footer class="footer">
-    <div class="contenedor">
-            <div class="footer-row">
-                <div class="footer-links">
-                    <h2>Categorías</h2>
-                    <ul>
-                        <li><a href="#">Inicio</a></li>
-                        <li><a href="#">Menú</a></li>
-                        <li><a href="#">Delivery</a></li>
-                        <li><a href="#">Reservas</a></li>
-                        <li><a href="#">Opiniones</a></li>
-                    </ul>
-                </div>        
-                <div class="footer-links">
-                      <h2>Medios De Pago</h2>
-                      <ul>
-                          <li><a href="#">Efectivo</a></li>
-                          <li><a href="#">Débito</a></li>
-                          <li><a href="#">Mercado Pago </a></li>
-                          <li><a href="#">Crédito</a></li>
-                     </ul>
-                </div>    
-                <div class="footer-links">
-                      <h2>Contactanos</h2>
-                      <ul>
-                          <li><a href="#">Martes a Jueves de 20 a 2am</a></li>
-                          <li><a href="#">Virnes y Sábados de 20 a 4am</a></li>
-                          <li><a href="#">Juean Manso 1890,Buenos Aires </a></li>
-                     </ul>
-                </div>    
-                 <div class="footer-links">
-                      <h2>Siguenos</h2>
-                      <div class="social-links">
-                      <ul>
-                         <li><a href="https://www.instagram.com/ostenmadero/?hl=es">Instagram</a></li>
-                         <li><a href="#">Mail</a></li>
-
-                      </ul>  
-                      </div>
-                      
-                 </div>    
+  <body>
+    <div class="container2">
+      <div class="contact-box">
+        <div class="Izquierda"></div>
+        <div class="Derecha">
+          <h2>Contact Us</h2>
+          <input type="texto" class="campo" placeholder="Nombre" />
+          <input type="texto" class="campo" placeholder="E-Mail" />
+          <input type="texto" class="campo" placeholder="Celular" />
+          <textarea placeholder="Mensaje" class="campo"></textarea>
+          <button class="btn">Enviar</button>
         </div>
+      </div>
+    </div>
+    <script>
+      const hamburger = document.querySelector('.hamburger');
+      const menu = document.querySelector('.menu');
 
-    </footer>
+      hamburger.addEventListener('click', () => {
+        menu.classList.toggle('show');
+      });
+
+      document.addEventListener('click', (event) => {
+        const target = event.target;
+        if (!menu.contains(target) && !hamburger.contains(target)) {
+          menu.classList.remove('show');
+        }
+      });
+    </script>
+  </body>
+
+  <footer class="footer">
+    <div class="footer-contenedor">
+      <div class="footer-links">
+        <h2 class="footer-title">Categorías</h2>
+        <ul>
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Menú</a></li>
+          <li><a href="#">Delivery</a></li>
+          <li><a href="#">Reservas</a></li>
+          <li><a href="#">Opiniones</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h2 class="footer-title">Medios De Pago</h2>
+        <ul>
+          <li><a href="#">Efectivo</a></li>
+          <li><a href="#">Débito</a></li>
+          <li><a href="#">Mercado Pago </a></li>
+          <li><a href="#">Crédito</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h2 class="footer-title">Contactanos</h2>
+        <ul>
+          <li><a href="#">Martes a Jueves de 20 a 2am</a></li>
+          <li><a href="#">Virnes y Sábados de 20 a 4am</a></li>
+          <li><a href="#">Juean Manso 1890,Buenos Aires </a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h2 class="footer-title">Siguenos</h2>
+        <div class="social-links">
+          <ul>
+            <li>
+              <a href="https://www.instagram.com/ostenmadero/?hl=es"
+                >Instagram</a
+              >
+            </li>
+            <li><a href="#">Mail</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
 </html>
