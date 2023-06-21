@@ -46,7 +46,7 @@ header {
 }
 
 .menu li a:hover {
-  background: #e5e5cb;
+  background: #A17747;
 }
 
 video {
@@ -302,7 +302,7 @@ h1 {
 }
 
 .contact-box {
-  max-width: 850px;
+  max-width: 90%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   justify-content: center;
@@ -312,7 +312,21 @@ h1 {
   box-shadow: 0px 0px 19px 5px rgba(0, 0, 0, 0.19);
   margin-top: 10%;
 }
-
+@media (max-width: 900px) {
+  .contact-box {
+    display: flex;
+    flex-direction: column;
+    max-width: 90%;
+  }
+  .Izquierda {
+    height: 250px !important;
+  }
+}
+.btn-contact {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
 .Izquierda {
   background: url('imgcontacto.jpg') no-repeat center;
   background-size: cover;
@@ -343,7 +357,7 @@ h1 {
 }
 
 .campo {
-  width: 100%;
+  width: 70%;
   border: 2px solid rgba(0, 0, 0, 0);
   outline: none;
   background-color: rgba(230, 230, 230, 0.6);
@@ -400,14 +414,6 @@ textarea {
   border-radius: 30px;
   flex-direction: row;
 }
-/* @media (max-width: 600px) {
-  .card-img {
-    display: none;
-  }
-  .card-container {
-    display: block;
-  }
-} */
 
 .card-img {
   background: url('reserva.jpeg') center/cover no-repeat;
@@ -473,33 +479,39 @@ form input[type='submit']:hover {
   margin-top: 20px;
 }
 .column {
-    float: none;
-    width: 40%;
-    padding: 20px;
-    color: #e5e5cb;
-    border-radius: 20px;
-    text-align: center;
-    background-color: #3c2a21
-  }
-  
-.row{
-   display: flex;
-   flex-wrap: wrap;
-   flex-direction: row;
-   justify-content: space-evenly;
+  float: none;
+  width: 40%;
+  padding: 20px;
+  color: #e5e5cb;
+  border-radius: 20px;
+  text-align: center;
+  background-color: #3c2a21;
 }
 
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+@media (max-width: 900px) {
+  .row {
+    flex-direction: column-reverse !important;
+    align-items: center;
+    gap: 20px;
   }
+  .column1 {
+    margin-top: 0 !important;
+  }
+  .column {
+    width: 85%;
+  }
+}
 
- 
-  .column1{
-    margin-top: 150px;
-    font-size:20px;
-  }
+.column1 {
+  margin-top: 150px;
+  font-size: 20px;
+}
 .hamburger {
   display: none; /* Hide hamburger menu by default */
   cursor: pointer;
@@ -519,6 +531,7 @@ nav {
   margin-bottom: 10px;
   padding: 10px;
 }
+
 @media (max-width: 600px) {
   .menu {
     z-index: 1000;
@@ -555,4 +568,3 @@ nav {
     padding-left: 20px;
   }
 }
- 
